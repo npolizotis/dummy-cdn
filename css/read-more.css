@@ -32,3 +32,8 @@
   border: 1px solid #ddd;
   border-radius: .25em;
 } 
+
+//ENDO Specific 
+.body-overlay {
+  background-position-y: -100px;
+}
