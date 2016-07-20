@@ -2,7 +2,7 @@ $(function(){
 
 //add css
 // should be added at PB level 
- $('head').append('<link rel="stylesheet" href="https://gitcdn.link/repo/npolizotis/dummy-cdn/master/css/read-more.css" type="text/css" />');
+ $('head').append('<link rel="stylesheet" href="https://gitcdn.link/cdn/npolizotis/dummy-cdn/b77d86cea5ba1d8543d64187c55f1144dcc75d98/css/read-more.css" type="text/css" />');
 
 
 //before 
