@@ -43,7 +43,7 @@ div.lightbox div.container .closemsg {
 	height: 0;
 	overflow: visible;
 	text-align: right;
-	z-index: 5001;
+	z-index: 10001;
 	cursor: default;
 }
 
