@@ -6,6 +6,9 @@ div.lightbox {
 	width: 100%;
 	height: 100%;
 }
+.lightbox .hidden {
+	display:none;
+}
 
 div.lightbox:target {
 	display: table;
