@@ -25,7 +25,9 @@
                 {
                     var product = $("#product-inner input#product").val();
                     var environment = $("#product-inner input:radio[name=environment]:checked").val();
-                    window.open("http://" + product + "-" + environment + ".literatumonline.com");
+                    var popup=window.open("http://" + product + "-" + environment + ".literatumonline.com");
+                    popup.blur();
+                    window.focus();
                     return false;
                 }
             });
