@@ -12,6 +12,7 @@ div.lightbox {
 
 div.lightbox:target {
 	display: table;
+	z-index: 10000;
 }
 
 div.lightbox div.container {
@@ -57,7 +58,7 @@ div.lightbox div.container .closemsg, div.lightbox div.container div.content {
 	position: relative;
 	right: -20px;
 	top: -10px;
-	z-index: 5002;
+	z-index: 10001;
 	color: #ffffff;
 	border: 1px #ffffff solid;
 	border-radius: 10px;
