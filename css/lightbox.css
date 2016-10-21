@@ -14,7 +14,7 @@ div.lightbox:target {
 	display: table;
 }
 
-div.lightbox figure {
+div.lightbox div.container {
 	display: table-cell;
 	margin: 0;
 	padding: 0;
@@ -23,7 +23,7 @@ div.lightbox figure {
 	vertical-align: middle;
 }
 
-div.lightbox figure figcaption {
+div.lightbox div.container div.content {
 	display: block;
 	margin: auto;
 	padding: 8px;
@@ -37,7 +37,7 @@ div.lightbox figure figcaption {
 	font-size: 14px;
 }
 
-div.lightbox figure .closemsg {
+div.lightbox div.container .closemsg {
 	display: block;
 	margin: auto;
 	height: 0;
@@ -47,7 +47,7 @@ div.lightbox figure .closemsg {
 	cursor: default;
 }
 
-div.lightbox figure .closemsg, div.lightbox figure figcaption {
+div.lightbox div.container .closemsg, div.lightbox div.container div.content {
 	width: 300px;
 }
 

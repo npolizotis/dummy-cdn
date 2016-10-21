@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/lightbox.css">
+    <title>Test Product</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            
+            var close=function (e){
+                if(e.keyCode===27){
+                    $("a.closemsg")[0].click();
+                    $("#product-inner").addClass("done");
+                }
+            }
+            $(document).on('keyup','#product-inner:not(.done)',close);   
+            
+            $(".lightbox a.hidden")[0].click();
+            $(".lightbox input")[0].focus();
+            $("#product-inner form").on("submit", function(e) {
+                e.preventDefault();
+                if ($("#product-inner.lightbox form")[0].checkValidity()) 
+                {
+                    var product = $("#product-inner input#product").val();
+                    var environment = $("#product-inner input:radio[name=environment]:checked").val();
+                    window.open("http://" + product + "-" + environment + ".literatumonline.com");
+                    return false;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="lightbox" id="product-inner">
+        <a href="#product-inner" class="hidden">Hidden</a>
+        <div class="container">
+            <form>
+                <a href="#" class="closemsg"></a>
+                <div class="content">
+                    <div>
+                        <label>Product name
+                            <input placeholder="Fill in the product code" required type="text" id="product" name="product">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Environment
+                            <div>
+                                <input type="radio" name="environment" value="prod" checked>Production</div>
+                            <div>
+                                <input type="radio" name="environment" value="stag"> Staging
+                            </div>
+                            <div>
+                                <input type="radio" name="environment" value="test">Test
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <button  accesskey="o" id="open-product">Open</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
