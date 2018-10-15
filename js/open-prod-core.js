@@ -1,8 +1,8 @@
 (function($){
 
 	$(function(){
-		$('head').append('<link rel="stylesheet" href="//rawgit.com/npolizotis/dummy-cdn/master/css/lightbox.css" type="text/css" />');
-		$.get("//rawgit.com/npolizotis/dummy-cdn/master/html/product.html",function(data){
+		$('head').append('<link rel="stylesheet" href="https://https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn/css/lightbox.css" type="text/css" />');
+		$.get("https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn//html/product.html",function(data){
 				//laod html
 				$("body").append(data);
 				
