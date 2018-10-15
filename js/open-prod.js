@@ -20,7 +20,7 @@
 	}
 	
 	function initMyBookmarklet() {
-		$.getScript('//rawgit.com/npolizotis/dummy-cdn/master/js/open-prod-core.js');
+		$.getScript('https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn/js/open-prod-core.min.js');
 	}
 
 })();
