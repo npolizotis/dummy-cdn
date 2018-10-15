@@ -18,14 +18,14 @@ if (window.jQuery === undefined || window.jQuery.fn.jquery < jQueryVersion) {
 function initMyBookmarklet () {
   (function ($) {
     $(function () {
-      if ($('#product-inner')) {
+      if ($('#product-inner').length) {
         $('#product-inner').removeClass('done')
         $('.lightbox a.hidden')[0].click()
         $('.lightbox input')[0].focus()
         return
       }
-      $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn@1.3.0/css/lightbox.css" type="text/css" />')
-      $.get('https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn@1.3.0/html/product.html', function (data) {
+      $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn@1.3.1/css/lightbox.css" type="text/css" />')
+      $.get('https://cdn.jsdelivr.net/gh/npolizotis/dummy-cdn@1.3.1/html/product.html', function (data) {
         // laod html
         $('body').append(data)
         var close = function (e) {
